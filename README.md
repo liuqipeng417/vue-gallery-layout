@@ -109,7 +109,7 @@ export default {
 
 ## 扩展（高层）组件
 
-- [vue-gallery-images]()：画廊组件
+- [vue-gallery-images](https://github.com/liuqipeng417/vue-gallery-pictures)：画廊组件
 
 ## LICENSE
 

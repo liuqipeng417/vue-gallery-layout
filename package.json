@@ -1,8 +1,8 @@
 {
   "name": "vue-gallery-layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Using css3 realize like Google Photo layout vue component",
-  "main": "./dist/vue-gallery-.js",
+  "main": "./dist/vue-gallery-layout.js",
   "module": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liuqipeng417/vue-gallery-layout.git"
+    "url": "git@github.com:liuqipeng417/vue-gallery-layout.git"
   },
   "keywords": [
     "vue",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/liuqipeng417/vue-gallery-layout/issues"
   },
-  "homepage": "https://github.com/liuqipeng417/vue-gallery-layout#readme",
+  "homepage": "https://github.com/liuqipeng417/vue-gallery-layout",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
