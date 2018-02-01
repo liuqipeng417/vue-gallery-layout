@@ -47,6 +47,7 @@ Vue.use(VueGalleryLayout);
     <gallery-layout :items="items">
       <template slot-scope="scope" slot="item">
         <div>{{scope.item.width}}</div>
+        <img :src="scope.item.src"/>
       </template>
     </gallery-layout>
   </div>
@@ -83,8 +84,8 @@ export default {
 - items: Array<[item...]>
     - item: Object<{width, height, ratio, id}>
         - id: Any 标识符
-        - width: Number 宽
-        - height: Number 高
+        - width: Number 宽，必需
+        - height: Number 高，必需
         - ratio: Number, width / height，有 ratio 则不需要 width 以及 height
 - boxContainerClass: String，默认为''； box 容器 class
 - boxInitRatio: Number，默认 200；假设大部分 box 的比例 2: 1，初始屏幕宽度为 1600px，你希望可以大部分情况下可以容纳 4 个 box，那么你的 boxInitRatio 小于 200。注意：由于自适应的存在，每行容纳 box 实际上是由 boxInitRatio, item 的 ratio，每行宽度决定的。
@@ -93,6 +94,6 @@ export default {
 
 - [vue-gallery-images]()：画廊组件
 
-## TODO
+## LICENSE
 
-- 支持编译后文件
+MIT
