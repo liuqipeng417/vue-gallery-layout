@@ -22,8 +22,6 @@ PS: 自适应指：高宽均不可控
 
 ## 用法
 
-### demo
-
 局部引入
 ```
 import VueGalleryLayout from 'vue-gallery-layout';
@@ -45,13 +43,28 @@ import Vue from 'vue';
 Vue.use(VueGalleryLayout);
 ```
 
+Broswer 引入
+```
+// 全局暴露变量 GalleryLayout
+<script src="http://img1.pcfg.cache.wpscdn.cn/ks3_e54f8ef1b8d7109e20123211fcba9376/vue-gallery-layout.min.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    components: {
+      GalleryLayout
+    }
+  })
+</script>
+```
+
+具体使用
 ```
 <template>
   <div>
     <gallery-layout :items="items">
-      <template slot-scope="scope" slot="item">
+      <template slot-scope="scope">
         <div>{{scope.item.width}}</div>
-        <img :src="scope.item.src"/>
+        <!-- <img :src="scope.item.src"/> -->
       </template>
     </gallery-layout>
   </div>
