@@ -1,3 +1,4 @@
+var GalleryLayout =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -68,6 +69,11 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+//
+//
+//
+//
+//
 //
 //
 //
@@ -229,7 +235,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, "\n.gallery-layout {\n    display: flex;\n    flex-wrap: wrap;\n}\n", ""]);
+exports.push([module.i, "\n.gallery-layout {\n    display: flex;\n    flex-wrap: wrap;\n}\n.gallery-layout-box-container {\n    position: relative;\n}\n.gallery-layout-box {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: block;\n    height: 100%;\n    width: 100%;\n}\n.gallery-layout-padding {\n    display: block;\n}\n", ""]);
 
 // exports
 
@@ -711,23 +717,28 @@ var render = function() {
         "div",
         {
           key: index || item.id,
+          staticClass: "gallery-layout-box-container",
           class: _vm.boxContainerClass,
           style: {
             width: _vm.getActurlRatio(item) * _vm.boxInitRatio + "px",
-            "flex-grow": _vm.getActurlRatio(item)
+            "flex-grow": _vm.getActurlRatio(item) * _vm.boxInitRatio
           }
         },
         [
           _c("i", {
+            staticClass: "gallery-layout-padding",
             style: {
-              "padding-bottom": 1 / _vm.getActurlRatio(item) * 100 + "%",
-              display: "block"
+              "padding-bottom": 1 / _vm.getActurlRatio(item) * 100 + "%"
             }
           }),
           _vm._v(" "),
-          _vm._t("item", null, { item: item })
-        ],
-        2
+          _c(
+            "div",
+            { staticClass: "gallery-layout-box" },
+            [_vm._t("default", null, { item: item })],
+            2
+          )
+        ]
       )
     })
   )
@@ -744,4 +755,4 @@ if (false) {
 }
 
 /***/ })
-/******/ ]);
+/******/ ])["default"];

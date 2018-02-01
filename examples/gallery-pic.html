@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue Gallery Layout Example</title>
+  <style>
+    .container-class {
+      margin: 4px;
+      border: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <gallery-layout
+      :items="items"
+      :box-container-class="boxContainerClass">
+      <template slot-scope="scope">
+        <span></span>
+      </template>
+    </gallery-layout>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+  <script src="../dist/vue-gallery-layout.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      components: {
+        GalleryLayout
+      },
+      data() {
+        return {
+          items: [],
+          boxContainerClass: 'container-class'
+        };
+      },
+      created() {
+        const basePath = 'https://xieranmaya.github.io/images/cats';
+
+        axios.get(`${basePath}/cats.json`).then((res) => {
+          this.items = res.data;
+        });
+      }
+    });
+  </script>
+</body>
+</html>

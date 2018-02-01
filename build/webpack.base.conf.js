@@ -7,10 +7,13 @@ function resolve(dir) {
 module.exports = {
 	context: resolve("./"),
 	entry: {
-		'vue-gallery-layout': resolve('./src/index.js'),
+    'vue-gallery-layout': resolve('./src/index.js')
 	},
 	output: {
-		path: resolve("dist")
+    path: resolve("dist"),
+    library: 'GalleryLayout',
+    libraryExport: 'default',
+		libraryTarget: 'var'
 	},
 	module: {
 		rules: [

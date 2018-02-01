@@ -4,6 +4,10 @@
 
 ## 例子
 
+[例子](http://jsbin.com/fequmek/7/edit?html,css,js,output)
+
+![例子](https://img1.pcfg.cache.wpscdn.cn/ks3_f200d01e8191c5620a38b743e79b4b13/gallery-demo-2.gif)
+
 ## 特点
 
 - 每个 box 等比拉伸
