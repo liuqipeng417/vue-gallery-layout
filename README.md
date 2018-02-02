@@ -6,7 +6,7 @@
 
 [例子](http://jsbin.com/fequmek/7/edit?html,css,js,output)
 
-![例子](https://kss.ksyun.com/wpsconfig/gallery-demo-2-iloveimg-compressed.gif)
+![例子](https://raw.githubusercontent.com/liuqipeng417/vue-gallery-pictures/master/examples/gallery-layout-demo.gif)
 
 ## 特点
 
@@ -46,7 +46,7 @@ Vue.use(VueGalleryLayout);
 Broswer 引入
 ```
 // 全局暴露变量 GalleryLayout
-<script src="http://img1.pcfg.cache.wpscdn.cn/ks3_e54f8ef1b8d7109e20123211fcba9376/vue-gallery-layout.min.js"></script>
+<script src="../dist/vue-gallery-layout.js"></script>
 <script>
   new Vue({
     el: '#app',
