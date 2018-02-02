@@ -1,4 +1,5 @@
 # vue-gallery-layout
+自适应画廊布局组件
 
 这是一个使用（近乎）纯 CSS 实现类似 Google Photo 图片列表的自适应布局组件；这里 `近乎` 实际上是指需要提前获知图片的比例或者宽高。具体原理请参照[此处](https://github.com/xieranmaya/blog/issues/4)
 
