@@ -11,7 +11,7 @@ module.exports = {
 	},
 	output: {
     path: resolve("dist"),
-    library: 'GalleryLayout',
+    library: 'VueGalleryLayout',
     libraryExport: 'default',
 		libraryTarget: 'var'
 	},

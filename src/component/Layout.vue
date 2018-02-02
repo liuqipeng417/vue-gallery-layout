@@ -24,7 +24,7 @@
 
 <script>
 	export default {
-    name: 'GalleryLayout',
+    name: 'VueGalleryLayout',
 
 		props: {
 			items: {

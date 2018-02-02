@@ -48,7 +48,7 @@ Vue.use(VueGalleryLayout);
 
 Broswer 引入
 ```
-// 全局暴露变量 GalleryLayout
+// 全局暴露变量 VueGalleryLayout
 <script src="../dist/vue-gallery-layout.js"></script>
 <script>
   new Vue({

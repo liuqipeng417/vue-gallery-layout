@@ -1,6 +1,6 @@
 {
   "name": "vue-gallery-layout",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Using css3 realize like Google Photo layout vue component",
   "main": "./dist/vue-gallery-layout.js",
   "module": "./src/index.js",
