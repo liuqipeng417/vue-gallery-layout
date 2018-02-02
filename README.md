@@ -5,9 +5,11 @@
 
 ## 例子
 
-[例子](http://jsbin.com/fequmek/7/edit?html,css,js,output)
+[JSbin 例子](http://jsbin.com/fequmek/7/edit?html,css,js,output)
 
 ![例子](https://raw.githubusercontent.com/liuqipeng417/vue-gallery-pictures/master/examples/gallery-layout-demo.gif)
+
+另可参考 example 文件夹的 gallery-layout-example.htm
 
 ## 特点
 
@@ -62,10 +64,12 @@ Broswer 引入
 ```
 <template>
   <div>
-    <gallery-layout :items="items">
+    <gallery-layout
+      :items="items"
+      :box-container-class="boxContainerClass"
+      :box-init-ratio="boxInitRatio">
       <template slot-scope="scope">
-        <div>{{scope.item.width}}</div>
-        <!-- <img :src="scope.item.src"/> -->
+        <div>{{ scope.item.width }}</div>
       </template>
     </gallery-layout>
   </div>
@@ -80,21 +84,31 @@ export default {
       items: [
         {
           {
+            id: 1,
             width: 200,
             height: 100
             // ratio: 2
           },
           {
+            id: 2,
             width: 300,
             height: 200
             // ratio: 1.5
           }
         }
-      ]
+      ],
+      boxContainerClass: 'box-container-margin',
+      boxInitRatio: 100
     }
   }
 }
 </script>
+
+<style>
+  .box-container-margin {
+    margin: 4px;
+  }
+</style>
 ```
 
 ### props
@@ -105,8 +119,12 @@ export default {
         - width: Number 宽，必需
         - height: Number 高，必需
         - ratio: Number, width / height，有 ratio 则不需要 width 以及 height
+
 - boxContainerClass: String，默认为''； box 容器 class
-- boxInitRatio: Number，默认 200；假设大部分 box 的比例 2: 1，初始屏幕宽度为 1600px，你希望可以大部分情况下可以容纳 4 个 box，那么你的 boxInitRatio 小于 200。注意：由于自适应的存在，每行容纳 box 实际上是由 boxInitRatio, item 的 ratio，每行宽度决定的。
+
+- boxInitRatio: Number，默认 200；
+
+    假设大部分 box 的比例 2: 1，初始屏幕宽度为 1600px，你希望可以大部分情况下可以容纳 4 个 box，那么你的 boxInitRatio 小于 200。注意：由于自适应的存在，每行容纳 box 实际上是由 boxInitRatio, item 的 ratio，每行宽度决定的。
 
 ## 扩展（高层）组件
 
