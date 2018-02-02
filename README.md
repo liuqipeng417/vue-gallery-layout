@@ -5,11 +5,9 @@
 
 ## 例子
 
-[JSbin 例子](http://jsbin.com/fequmek/7/edit?html,css,js,output)
-
 ![例子](https://raw.githubusercontent.com/liuqipeng417/vue-gallery-layout/master/examples/gallery-layout-demo.gif)
 
-另可参考 example 文件夹的 gallery-layout-example.htm
+另可参考 example 文件夹的 [gallery-layout-example.html](https://raw.githubusercontent.com/liuqipeng417/vue-gallery-layout/master/examples/gallery-layout-example.html)
 
 ## 特点
 

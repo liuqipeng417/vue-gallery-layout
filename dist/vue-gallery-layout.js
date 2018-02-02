@@ -1,4 +1,4 @@
-var GalleryLayout =
+var VueGalleryLayout =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -95,7 +95,7 @@ var GalleryLayout =
 //
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  name: 'GalleryLayout',
+  name: 'VueGalleryLayout',
 
   props: {
     items: {
@@ -137,7 +137,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 __WEBPACK_IMPORTED_MODULE_0__component_Layout_vue__["a" /* default */].install = function (Vue) {
-	Vue.component(__WEBPACK_IMPORTED_MODULE_0__component_Layout_vue__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_0__component_Layout_vue__["a" /* default */]);
+  Vue.component(__WEBPACK_IMPORTED_MODULE_0__component_Layout_vue__["a" /* default */].name, __WEBPACK_IMPORTED_MODULE_0__component_Layout_vue__["a" /* default */]);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__component_Layout_vue__["a" /* default */]);
@@ -235,7 +235,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, "\n.gallery-layout {\n    display: flex;\n    flex-wrap: wrap;\n}\n.gallery-layout-box-container {\n    position: relative;\n}\n.gallery-layout-box {\n    position: absolute;\n    top: 0;\n    left: 0;\n    display: block;\n    height: 100%;\n    width: 100%;\n}\n.gallery-layout-padding {\n    display: block;\n}\n", ""]);
+exports.push([module.i, "\n.gallery-layout {\n  display: flex;\n  flex-wrap: wrap;\n}\n.gallery-layout-box-container {\n  position: relative;\n}\n.gallery-layout-box {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: block;\n  height: 100%;\n  width: 100%;\n}\n.gallery-layout-padding {\n  display: block;\n}\n", ""]);
 
 // exports
 

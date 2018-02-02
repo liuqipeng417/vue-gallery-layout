@@ -1,5 +1,5 @@
 <template>
-	<div class="gallery-layout">
+  <div class="gallery-layout">
     <div
       v-for="(item, index) in items"
       :key="index || item.id"
@@ -19,17 +19,17 @@
         <slot :item="item"></slot>
       </div>
     </div>
-	</div>
+  </div>
 </template>
 
 <script>
-	export default {
+  export default {
     name: 'VueGalleryLayout',
 
-		props: {
-			items: {
-				type: Array,
-				default() {
+    props: {
+      items: {
+        type: Array,
+        default() {
           return [];
         }
       },
@@ -54,14 +54,14 @@
         }
       }
     }
-	};
+  };
 </script>
 
 <style>
-	.gallery-layout {
+  .gallery-layout {
     display: flex;
     flex-wrap: wrap;
-	}
+  }
 
   .gallery-layout-box-container {
     position: relative;
